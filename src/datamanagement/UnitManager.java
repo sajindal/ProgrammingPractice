@@ -1,7 +1,6 @@
 package datamanagement;
 
 import java.util.List;
-
 import org.jdom.*;
 
 public class UnitManager {
@@ -26,7 +25,6 @@ public class UnitManager {
 
 	}
 
-	@SuppressWarnings({ "unchecked", "unused" })
 	private IUnit createUnit(String unitCode) {
 
 		IUnit iu;
@@ -59,7 +57,6 @@ public class UnitManager {
 		throw new RuntimeException("DBMD: createUnit : unit not in file");
 	}
 
-	@SuppressWarnings("unchecked")
 	public UnitMap getUnits() {
 
 		UnitMap uM;
