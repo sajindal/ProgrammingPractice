@@ -35,10 +35,10 @@ try {
 
 
                 catch (JDOMException e) {
-System.err.printf( "%s", "DBMD: XMLManager : init : caught JDOMException\n" );
+System.out.printf( "%s", "DBMD: XMLManager : init : caught JDOMException\n" );
 throw new RuntimeException("DBMD: XMLManager : init : JDOMException");} 
         catch (IOException e) {
-            System.err.printf( "%s", "DBMD: XMLManager : init : caught IOException\n" );
+            System.out.printf( "%s", "DBMD: XMLManager : init : caught IOException\n" );
             
             
             
@@ -57,6 +57,6 @@ XMLOutputter outputter = new XMLOutputter(Format.getPrettyFormat());
                     fout.close();
 }
         catch (IOException ioe) {
-System.err.printf( "%s\n", "DBMD : XMLManager : saveDocument : Error saving XML to " + xmlfile);
+System.out.printf( "%s\n", "DBMD : XMLManager : saveDocument : Error saving XML to " + xmlfile);
                     throw new RuntimeException("DBMD: XMLManager : saveDocument : error writing to file");
         }}}
